@@ -2,10 +2,13 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid $blue-dark;
   border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  min-height: 65px;
+  line-height: 65px;
+  // min-height: $spacing-unit * 1.865;
+  // line-height: $base-line-height * $base-font-size * 2.25;
+  background-color: #f7f7f7;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -17,6 +20,12 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+
+  img {
+    width: 120px;
+    margin-top: 5px;
+    position: absolute;
+  }
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -74,7 +83,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $blue-dark;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
@@ -219,7 +228,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.3);
 }
 
 
